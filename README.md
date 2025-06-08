@@ -1,4 +1,4 @@
-# 📚 Book Library API – MERN Stack Project
+# 📚 Book Library API 
 
 This is a Backend  (MongoDB, Express.js, Node.js) application for managing a collection of books. It includes user authentication and provides APIs to create, update, delete, and retrieve books.
 
@@ -36,6 +36,15 @@ Make sure you have the following installed:
 | /api/books/:book_id | `DELETE` | Empty | Delete a book. |
 | /api/books/top/:top_id | `GET` | Empty | Get the top books with your limit. |
 | /api/books/year/:start_year/:end_year | `GET` | Empty | Books between two dates. |
+
+# Authors
+| Route | HTTP Verb	 | Post Body	 | Description	 |
+| --- | --- | --- | --- |
+| /api/authors | `GET` | Empty | List all authors and theirs books. |
+| /api/authors | `POST` | {'name': 'J. R. R.', 'surname':'Tolkien', 'bio':'Lorem ipsum dolor sit amet'} | Create a new author. |
+| /api/authors/:author_id | `GET` | Empty | Get single author and their books. |
+| /api/authors/:author_id | `PUT` | {'bio': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'} | Update a author with new info. |
+| /api/authors/:author_id | `DELETE` | Empty | Delete a author. |
 
 
 # Index
